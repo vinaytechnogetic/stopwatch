@@ -22,10 +22,10 @@ const Timer = () => {
             <span>{("0" + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
             <span>{("0" + ((time / 10) % 100)).slice(-2)}</span>
           </div>
-          <div className="buttons">
+          <div className="buttons">    
             <Button onClick={() => SetActive(true)} variant="primary">Start</Button>
             <Button onClick={() => SetActive(false)} variant="primary">Stop</Button>
-            <Button onClick={() => SetActive(0)} variant="primary">Reset</Button>
+            <Button onClick={() => setTime(0)} variant="primary">Reset</Button>
           </div>
         </div>
       );
